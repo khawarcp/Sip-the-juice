@@ -1,0 +1,83 @@
+ <link rel="stylesheet" href="{{ "index-gallery.css" | asset_url }}" >
+<section class="salalam-imgs-sec {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+    data-cascade
+    {% endif %}>
+    <div class="page-width">
+        <div class="salalam-relative-sec">
+            {% if section.settings.logo_image != blank %}                
+            <div class="logo-type-salalam">
+                <img src="{{ section.settings.logo_image | image_url: width: 304 }}" height="{{ section.settings.logo_image.height }}"
+                width="{{ section.settings.logo_image.width }}"
+                alt="{{ section.settings.logo_image.alt }}"
+                loading="lazy">
+            </div>
+            {% endif %}
+            <div class="slalam-hover-imgs flex">
+                {% for block in section.blocks %}    
+                    {% assign lazy_load = false %}
+                    {%- if forloop.index > 2 -%}
+                      {%- assign lazy_load = true -%}
+                    {%- endif -%}                
+                    <div class="slalam-col-imgs">
+                        {% render 'image-card', image: block.settings.image, lazy_load: lazy_load %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% schema %}
+    {
+        "name": "Gallery",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "logo_image",
+                "label": "Logo"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading"
+            },
+            {
+                "type": "richtext",
+                "id": "richtext",
+                "label": "Text"
+            },
+            {
+                "type": "text",
+                "id": "button_text",
+                "label": "Button Text",
+                "default": "Shop the Sashiko"
+            },
+            {
+                "type": "url",
+                "id": "button_link",
+                "label": "Button Link"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "slide",
+                "name": "Slide",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
+                    }    
+                ]
+            }
+        ],
+        "presets":[
+            {
+                "name": "Gallery"
+            }
+        ]
+    }
+{% endschema %}

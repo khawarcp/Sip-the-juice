@@ -1,0 +1,48 @@
+.page-content-inner {
+    max-width: 960px;
+    margin: auto;
+    text-align: center;
+}
+
+.page-content-inner h2 {
+    max-width: 805px;
+    margin:0 auto;    
+    font-size: 4.8rem;
+    line-height: 7.2rem;
+}
+
+.page-content-inner p {
+    line-height: 25.6px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@media screen and (min-width: 992px) {
+    .page-content-inner h2 {
+        max-width: 805px;
+        margin: 0 auto;
+        font-size: 3.8rem;
+        line-height: 6rem;
+        max-width: 775px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .page-content-inner h2 {
+        font-size: 3.2rem;
+        line-height: 4.5rem;
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .page-content-inner h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        max-width: 600px;
+    }
+    .page-content-inner p:last-child {
+        margin-bottom: 0;
+    }
+    .page-content-inner p {
+        line-height: 22.6px;
+        font-size: 1.6rem;
+    }
+}

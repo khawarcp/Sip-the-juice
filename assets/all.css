@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Iskry';
+    src: url('https://cdn.shopify.com/s/files/1/0844/8462/0583/files/Iskry-Regular.woff2?v=1700547143') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0844/8462/0583/files/Iskry-Regular.woff?v=1700547144') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body.gradient {
+    background: #F4F3EE;
+}
+a{
+  text-decoration:none;
+}
+.flex{
+    display: flex;
+}
+.jc-sb{
+    justify-content: space-between;
+}
+.ai-c{
+    align-items: center;
+}
+
+.bal-slide--content {
+    bottom: 5rem;
+}
+
+.bal-slider--nav {
+    bottom: 5rem;
+}
+p{
+    line-height: 1.4;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0;
+}
+
+.home-collection-sider .owl-item.active.center  .shop-img {
+    max-width: 100%;
+}
+
+.shop-img {
+    margin-bottom: 10px;
+}
+
+
+
+.home-collection-sider .owl-item.active.center .shop-img img {
+    max-height: 350px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Iskry', sans-serif;
+}
+
+
+.slalam-hover-imgs {
+    padding: 0px 0;
+}
+
+.slalam-col-imgs {
+    flex: 1;
+    transition-duration: 0.2s;
+    transition: 1s all cubic-bezier(0.175, 0.82, 0.165, 1);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.slalam-col-imgs:nth-child(4) {
+    flex: 4;
+}
+
+
+.slalam-col-imgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    height: 90vh;
+    object-position: center;
+}
+
+
+.our-story-text {
+    width: 50%;
+    background-color: #0E0E0E;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.our-story-main-width h4 {
+    color: #FFFFFF;
+}
+
+.our-story-main-width h4 {
+    margin-bottom: 25px;
+}
+
+.our-story-main-width p {
+    color: rgb(255 255 255 / 100%);
+    font-size: 16px;
+    margin-bottom: 30px;
+  text-align: center;
+}
+
+.our-story-main-width a {
+    color: #0E0E0E;
+    background-color: #FFFFFF;
+    padding: 12px 30px;
+    border: 1px solid transparent;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.our-story-main-img img {
+    width: 100%;
+}
+
+.our-story-main-width {
+    max-width: 95%;
+}
+.title-para-row {
+    margin-bottom: 60px;
+}
+
+.night-wear-content {
+    padding: 100px 0px 0px;
+}
+
+.night-wear-col1 {
+    width: 52%;
+}
+
+.night-wear-col2 {
+    width: 48%;
+}
+
+.night-wear-col1 {
+    border: 1px solid #E8E4D3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.night-wear-img-content>img {
+    margin: auto;
+}
+
+.night-wear-img-content {
+    max-width: 460px;
+    margin: 0px auto;
+}
+
+.night-wear-img1-para {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.night-wear-img1-para p {
+    max-width: 340px;
+    margin-bottom: 0px;
+    color: #707070;
+}
+
+
+
+.custom-site-btn {
+  font-family: 'Josefin Sans', sans-serif;
+    padding: 14px 38px;
+    letter-spacing: 0.5px;
+    transition: 0.2s all;
+    line-height: 1.6rem;
+  font-weight: 500;
+}
+
+
+.logo-wrapper {
+    position: relative;
+}
+
+.logo-link {
+    position: absolute;
+    z-index: 2;
+    top: 25px;
+    left: 0;
+}
+
+@media screen and (min-width:1400px){
+.slalam-col-imgs img {
+    height: 623px;
+}
+
+.slalam-col-imgs:nth-child(4) {
+    flex: 3.27;
+}
+
+.slalam-col-imgs {
+    flex: 0.9;
+}
+
+.title-para-row {
+    margin-bottom: 70px;
+}
+}
+@media screen and (max-width:1199px){
+    .home-slider-bg {
+        min-height: 500px;
+    }
+    
+    .our-story-text {
+        padding: 40px;
+    }
+    
+    .our-story-main-width p {
+        margin-bottom: 20px;
+    }
+    
+    .our-story-main-width {
+        max-width: 100%;
+    }
+    
+    .night-wear-zoom-icon>img {
+        height: 300px;
+        width: 100%;
+    }
+   
+    .slalam-col-imgs img {
+        height: 480px;
+    }
+    
+    
+    .home-collection-sider .owl-item.active.center .shop-img img {
+        max-height: 400px;
+    }
+   
+}
+@media screen and (max-width:991px){
+
+    .home-text h4 {
+        max-width: 100%;
+    }
+    
+    .home-slider-bg {
+        min-height: 400px;
+    }
+    
+    .home-collection-sider .owl-item.active.center .shop-img img {
+        max-height: 300px;
+    }
+    
+    .shop-img img {
+        max-height: 250px;
+    }
+    
+    .slalam-col-imgs:nth-child(4) {
+        flex: 3;
+    }
+    
+   
+    .our-story-main-width p {
+        font-size: 14px;
+    }
+    
+    .our-story-main-img img {
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .our-story-text {
+        padding: 30px;
+    }
+
+    .salalam-relative-sec {
+        padding-top: 20px;
+    }
+    
+    .night-wear-zoom-icon>img {
+        height: 245px;
+        max-width: 100%;
+        width: auto;
+        margin: auto;
+    }
+    
+    .night-wear-img1-para p {
+        font-size: 14px;
+    }
+    
+    .night-wear-img1-para a img {
+        width: 15px;
+    }
+}
+@media screen and (max-width:767px){
+    .announcement-bar .owl-carousel {
+        max-width: 260px;
+    }
+   
+    .slalam-col-imgs img {
+        height: 220px;
+    }
+    
+    .logo-type-salalam {
+        width: 100px;
+        left: 15px;
+    }
+    
+    .salalam-relative-sec {
+        padding-top: 10px;
+    }
+    
+    .home-text h4 {
+        color: #fff;
+    }
+    
+    
+    
+    .our-story-row {
+        flex-direction: column;
+        padding: 30px 0px 0px;
+    }
+    
+    .our-story-main-img {
+        width: 100%;
+    }
+    
+    .our-story-text {
+        width: 100%;
+    }
+    
+    .title-para-row {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    
+    .night-wear-row {
+        flex-direction: column;
+    }
+    
+    .night-wear-col1 {
+        width: 100%;
+        padding: 50px;
+    }
+    
+    .night-wear-col2 {
+        width: 100%;
+    }
+    
+  
+    
+    footer {
+        padding-bottom: 30px;
+    }
+   
+    .custom-site-btn {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+.night-wear-col1 {
+    padding: 40px 15px;
+} 
+
+.announcement-bar .owl-carousel {
+    max-width: 250px;
+}
+.faq-main-text {
+    flex-direction: column;
+}
+
+.faq-banner-logo img {
+    margin: auto;
+    margin-bottom: 20px;
+}  
+
+}

@@ -1,0 +1,49 @@
+.announcement-bar p {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    margin: 0px;
+}
+
+.announcement-bar {
+    padding: 12px;
+}
+
+.announcement-bar p img {
+    margin: 0px 15px;
+}
+.close-icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+  z-index:1;
+}
+
+.announcement-bar .owl-nav {
+position: absolute;
+    right: 28px;
+    top: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 26px;
+}
+
+.announcement-bar .owl-carousel {
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+@media screen and (max-width:767px) {
+    .announcement-bar .item {
+        max-width: 300px;
+    }
+    .announcement-bar .owl-nav {
+        right: 20px;
+        width: 20px;
+    }
+    .announcement-bar p{
+        font-size: 1.4rem;
+    }
+}

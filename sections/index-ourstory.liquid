@@ -1,0 +1,53 @@
+ <link rel="stylesheet" href="{{ "index-ourstory.css" | asset_url }}" >
+
+<section class="our-story-sec {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+    data-cascade
+    {% endif %}>
+    <div class="page-width">
+      {% if section.settings.heading != blank %}
+        <div class="our-story-header ">
+          <h2> {{ section.settings.heading }} </h2>
+        </div>
+        {% endif %}
+        <div class="our-story-row flex jc-sb">
+            <div class="our-story-main-img">
+                {% render 'image-card', image: section.settings.image, lazy_load: true %}
+            </div>
+            <div class="our-story-text">
+                <div class="our-story-main-width">
+                   {{ section.settings.richtext }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name": "Our Story",
+        "settings":[
+            {
+              "type": "text",
+              "id": "heading",
+              "label": "Heading",
+              "default": "Hip-Hop Culture Fused With LA Street Style; Made & Designed In Los Angeles, CA"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+            },
+            {
+                "type": "richtext",
+                "id": "richtext",
+                "label": "Text"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Our Story"
+            }
+        ]
+    }
+{% endschema %}

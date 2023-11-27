@@ -1,0 +1,86 @@
+ <link rel="stylesheet" href="{{ "index-featured-images.css" | asset_url }}" >
+
+<section class="night-wear-sec {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+    data-cascade
+    {% endif %}>
+    <div class="page-width">
+        <div class="night-wear-content">
+            {% if section.settings.heading != blank and section.settings.richtext != blank %}
+            <div class="title-para-row flex jc-sb">
+                <h3> {{ section.settings.heading }} </h3>
+                <p> {{ section.settings.richtext }} </p>
+            </div>
+            {% endif %}
+            <div class="night-wear-row flex">
+                <div class="night-wear-col1">
+                    <div class="night-wear-img-content">
+                        <div class="night-wear-zoom-icon">                            
+                            <img src="{{ section.settings.image_1 | image_url }}" width="{{ section.settings.image_1.width }}" height="" loading="lazy" alt="{{ section.settings.image_1.alt }}">                            
+                        </div>
+                        <div class="night-wear-img1-para">
+                            <p> {{ section.settings.images_text }} </p>
+                            {% if section.settings.arrow_link != blank %}                                
+                                <a href="{{ section.settings.arrow_link }}"><img src="{{ 'link-arrow.svg' | asset_url }}" height="" width="" loading="lazy" alt="link-arrow"></a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="night-wear-col2">
+                    {% render 'image-card', image: section.settings.image_2, lazy_load: true %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name":"Featured Images",
+        "settings": [
+            {
+                "type": "header",
+                "content": "Content"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading"
+            },
+            {
+                "type": "inline_richtext",
+                "id": "richtext",
+                "label": "Text"
+            },
+            {
+                "type": "header",
+                "content": "Images"
+            },
+            {
+                "type": "inline_richtext",
+                "id": "images_text",
+                "label": "Text"
+            },
+            {
+                "type": "image_picker",
+                "id": "image_1",
+                "label": "Image 1"
+            },
+            {
+                "type": "image_picker",
+                "id": "image_2",
+                "label": "Image 2"
+            },
+            {
+                "type": "url",
+                "id": "arrow_link",
+                "label": "Arrow Link"
+            }
+        ],
+        "presets": [
+            {
+                "name":"Featured Images"
+            }
+        ]
+    }
+{% endschema %}

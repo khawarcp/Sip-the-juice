@@ -1,0 +1,66 @@
+ <link rel="stylesheet" href="{{ "index-featured-collection.css" | asset_url }}" >
+ 
+<section class="collection-sec" id="collection-sec">
+    <div class="page-width">
+        <div class="home-collection-sider owl-carousel">    
+            {% for block in section.blocks %}
+            {% assign collection = collections[block.settings.featured_collection] %}
+                <div class="item">
+                    {% if section.settings.use_custom_image %}
+                    <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt }}" height="" width="" loading="lazy">
+                  {% else %}
+                    <img src="{{ collection.image | image_url }}" alt="{{ collection.image.alt }}" height="" width="" loading="lazy">
+                  {% endif %}
+                  <h3> {{  collection.title }} </h3>
+                </div> 
+            {% endfor %}            
+        </div>
+      {% if section.settings.richtext != blank %}
+              <div class="discover-btn">
+            {{ section.settings.richtext }}
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name": "Custom Collections",
+        "settings": [
+           {
+                "type": "richtext",
+                "id": "richtext",
+                "label": "Text"
+            }
+        ],
+      "blocks" : [
+        {
+          "name" : "Collection",
+          "type" : "collection",
+          "settings" : [
+            {
+                "type": "collection",
+                "id": "featured_collection",
+                "label": "Collection"
+            },
+            {
+              "type": "checkbox",
+              "id": "use_custom_image",
+              "label": "Custom Image",
+              "default": false
+            },
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            }
+          ]
+        }
+      ],
+        "presets": [
+            {
+                "name": "Custom Collections"
+            }
+        ]
+    }
+{% endschema %}

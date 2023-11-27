@@ -1,0 +1,55 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "new-announcement-bar": {
+      "type": "new-announcement-bar",
+      "blocks": {
+        "2fdadd17-3510-45c3-97eb-d4e0d5a8934c": {
+          "type": "announcement",
+          "settings": {
+            "text": "free shipping with the US",
+            "link": ""
+          }
+        },
+        "042207fd-3d58-4253-a5ee-7ed14308ca41": {
+          "type": "announcement",
+          "settings": {
+            "text": "free worldwide shipping and free returns",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "2fdadd17-3510-45c3-97eb-d4e0d5a8934c",
+        "042207fd-3d58-4253-a5ee-7ed14308ca41"
+      ],
+      "settings": {
+        "color_scheme": "scheme-f727588a-2210-462c-beb2-200fec5fc6f8"
+      }
+    },
+    "header": {
+      "type": "header",
+      "disabled": true,
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "background-1",
+        "menu_color_scheme": "background-1",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "new-announcement-bar",
+    "header"
+  ]
+}

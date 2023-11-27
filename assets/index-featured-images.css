@@ -1,0 +1,53 @@
+.night-wear-row {
+    background-color: #EFECDF;
+}
+
+.night-wear-img1-para a img {
+    width: 19px;
+    height: 19px;
+}
+
+
+@media screen and (max-width:1199px) {
+    .night-wear-content {
+        padding: 80px 0 0;
+    }
+    .night-wear-img1-para p {
+        max-width: 320px;
+    }
+}
+@media screen and (max-width:991px) {
+    .night-wear-content {
+        padding: 60px 0 0;
+    }
+    .night-wear-img1-para {
+        padding-top: 0px;
+    }
+    .night-wear-zoom-icon>img {
+        height: 245px;
+        max-width: 100%;
+        width: 318px;
+        margin: auto;
+        object-fit: cover;
+    }
+
+    .night-wear-img1-para a img {
+    width: 40px;
+    height: 40px;
+}
+
+.night-wear-img1-para {
+    gap: 10px;
+    max-width: 318px;
+}
+
+.night-wear-img1-para p {
+    line-height: 1.8rem;
+}
+}
+
+@media screen and (max-width:767px) {
+    .night-wear-content {
+        padding: 50px 0 0;
+    }
+}

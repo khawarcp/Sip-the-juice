@@ -1,0 +1,251 @@
+.home-banner-slider {
+    position: relative;
+}
+.scroll-down {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+    text-align: center;
+    bottom: 20px;
+}
+
+.scroll-down a::before {
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    content: '';
+    border-radius: 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    left: 45%;
+    top: 0px;
+}
+.scroll-down a {
+    position: relative;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding-top: 18px;
+}
+
+.play-pause-slider a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.play-pause-slider.is-active a.button.secondary.play {
+    display: flex;
+}
+
+.play-pause-slider.is-active a.button.secondary.stop {
+    display: none;
+}
+
+.home-slider-bg {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+  justify-content:flex-start;
+    align-items: flex-end;
+    padding: 70px 15px;
+}
+
+.home-text h4 {
+    font-size: 30px;
+    line-height: 36px;
+   letter-spacing: 0.02em;
+    margin-bottom: 0px;
+      margin-top: 0;
+}
+.home-text a {
+    min-width: 165px;
+    text-align: center;
+    padding: 8.5px 30px;
+}
+
+.home-banner-slider .owl-nav {
+    position: absolute;
+        right: 180px;
+    bottom: 70px;
+    display: flex;
+}
+
+.home-slider-bg .page-width {
+        width: 100%;
+}
+
+.home-text p {
+    margin-bottom: 25px;
+}
+
+.home-banner-slider .owl-nav button {
+    width: 32px;
+    height: 32px;
+    background-color: #FFFFFF !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-banner-slider .owl-nav button.owl-next {
+    margin-left: 5px;
+}
+.play-pause-slider  {
+    bottom: 70px;
+    right: 255px;
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+    background-color: #FFFFFF !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-pause-slider a {
+    font-size: 0px;
+}
+
+.play-pause-slider a.play::before {
+    background-color: #000;
+    border-radius: 0.0625rem;
+    content: "";
+    display: inline-block;
+    height: 0.625rem;
+    width: 0.125rem;
+    margin-left: 0.1875rem;
+    background: transparent;
+    border-color: transparent transparent transparent #000;
+    border-style: solid;
+    border-width: 0.3125rem 0 0.3125rem 0.5rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 0.625rem;
+    width: 0.625rem;
+}
+
+a.button.secondary.play {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-pause-slider {
+    position: absolute;
+}
+
+.play-pause-slider a.play:before {
+    position: static;
+    box-shadow: none;
+    border-width: 5px 0 5px 7px;
+}
+
+.play-pause-slider a {
+    outline: 0px;
+    box-shadow: 0px;
+}
+
+.button.secondary.play::after {
+    display: none;
+}
+
+.play-pause-slider a {
+    cursor: pointer;
+    padding: 0px;
+}
+
+.play-pause-slider {
+    overflow: hidden;
+}
+
+.play-pause-slider a {
+    min-width: 30px;
+    min-height: 30px;
+    letter-spacing: 0px;
+}
+
+.button.secondary.stop:after {
+    margin-left: 4px;
+}
+
+.button.secondary.stop::before,
+.button.secondary.stop::after {
+    background-color: #000;
+    border-radius: 0.0625rem;
+    content: "";
+    display: inline-block;
+    height: 0.625rem;
+    width: 0.125rem;
+}
+
+.button.secondary.stop::after {
+    margin-left: 0.1875rem;
+}
+
+.play-pause-slider a {
+    background-color: transparent;
+}
+.button.secondary.stop:before, a.button.secondary.stop:after {
+    position: static;
+    box-shadow: none;
+    width: 1.5px;
+    height: 10px;
+}
+
+
+@media screen and (max-width: 1439px) {
+    .play-pause-slider {
+        right: 185px;
+    }
+    .home-banner-slider .owl-nav {
+        right: 110px;
+    }
+}
+
+
+@media screen and (max-width: 1366px) {
+    .play-pause-slider {
+        right: 155px;
+    }
+    .home-banner-slider .owl-nav {
+        right: 80px;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .play-pause-slider {
+        right: 135px;
+    }
+    .home-banner-slider .owl-nav {
+        right: 60px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .home-slider-bg {
+        justify-content: center;
+        align-items: center;
+    }
+    .home-banner-slider .owl-nav {
+        right: 30px;
+    }
+    .play-pause-slider {
+        right: 105px;
+    } 
+}

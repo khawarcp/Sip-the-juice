@@ -1,0 +1,119 @@
+{
+  "sections": {
+    "page-banner": {
+      "type": "page-banner",
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/about-banner.jpg"
+      }
+    },
+    "page-content": {
+      "type": "page-content",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "39624386-c46c-40c0-91c0-988b2a530c9d": {
+      "type": "about-images-slider",
+      "blocks": {
+        "3184f8b0-749b-41ae-bd01-bb2268e836a1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image-slide_1.jpg"
+          }
+        },
+        "50204610-dcbd-4ddc-aac2-d56edba14f4c": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image-slide_2.jpg"
+          }
+        },
+        "75078bb3-d630-40ad-98c0-96d473b9c7ee": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image-slide_1.jpg"
+          }
+        },
+        "c872a6ec-66e5-46a7-b2fa-34005121a8fa": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image-slide_2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "3184f8b0-749b-41ae-bd01-bb2268e836a1",
+        "50204610-dcbd-4ddc-aac2-d56edba14f4c",
+        "75078bb3-d630-40ad-98c0-96d473b9c7ee",
+        "c872a6ec-66e5-46a7-b2fa-34005121a8fa"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ef6ffb77-6b69-4d74-a8ee-1135b8a6d538": {
+      "type": "about-images-text",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/richttext_imag_1.jpg",
+        "text": "<p>Over the decades since hip hop culture was formed we have seen growth and change.<\/p><p>However, whilst experiencing this growth and change we have seen four pillars of the culture remain constant; with DJing, MCing, B-boying and Graffiti always being core elements of hip hop culture, from the beginning and for eternity.<\/p><p>At Sip The Juice we say, Honoring the past while looking to the future; where respect is a core value Sip The Juice is founded on.<\/p>",
+        "image_2": "shopify:\/\/shop_images\/richttext_imag_2.jpg",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "f227f3a0-fb48-402d-b3ea-612367eac43c": {
+      "type": "about-richtext-logo",
+      "settings": {
+        "logo_image": "shopify:\/\/shop_images\/richtext-logo.svg",
+        "text": "<p>Sip The Juice plans to play a leading role in ensuring that while Hip Hop evolves, the foundations of Hip Hop culture are never forgotten or dismissed; while continuously looking at innovative ways to ensure Sip The Juice's designs stay true to Los Angeles street style.<\/p>",
+        "padding_top": 40,
+        "padding_bottom": 80
+      }
+    },
+    "ddea060f-fe53-4543-b5ad-a8af6c5df10e": {
+      "type": "about-faqs",
+      "blocks": {
+        "8bbf25b5-9640-42ef-90aa-4db4b685cd02": {
+          "type": "item",
+          "settings": {
+            "heading": "Our Mission",
+            "text": "<p>To enlighten and educate society in relation to hip hop culture's foundation art forms<\/p>"
+          }
+        },
+        "ec67ad6a-a78a-4862-9297-4f4e22bb09e3": {
+          "type": "item",
+          "settings": {
+            "heading": "Our Vision",
+            "text": "<p>We will be a leader in creating a greater understanding and appreciation of all of hip hop's art forms; ensuring the foundations of hip hop are never forgotten<\/p>"
+          }
+        },
+        "5327204e-3b4c-434f-af3d-9badd9f5fd44": {
+          "type": "item",
+          "settings": {
+            "heading": "Our Promise",
+            "text": "<p>Luxurious high end streetwear, utilising premium quality and unique fabrics; while incorporating Hip Hop culture fused with LA street style into our innovative designs<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "8bbf25b5-9640-42ef-90aa-4db4b685cd02",
+        "ec67ad6a-a78a-4862-9297-4f4e22bb09e3",
+        "5327204e-3b4c-434f-af3d-9badd9f5fd44"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/About_Us.jpg",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "page-banner",
+    "page-content",
+    "39624386-c46c-40c0-91c0-988b2a530c9d",
+    "ef6ffb77-6b69-4d74-a8ee-1135b8a6d538",
+    "f227f3a0-fb48-402d-b3ea-612367eac43c",
+    "ddea060f-fe53-4543-b5ad-a8af6c5df10e"
+  ]
+}

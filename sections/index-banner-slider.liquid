@@ -1,0 +1,138 @@
+<link href="{{ 'index-banner-slider.css' | asset_url }}" rel="stylesheet">
+
+
+<section class="home-banner-slider color-{{ section.settings.color_scheme }} gradient">
+    <div class="page-width">
+      <div class="logo-wrapper">
+        <a href="{{ routes.root_url }}" class="logo-link">
+            {%- if settings.logo != blank -%}
+              <div class="header__heading-logo-wrapper {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                {% if settings.animations_reveal_on_scroll %}
+                data-cascade
+                {% endif %}>
+                {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+                {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
+                {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
+                {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
+                {{ settings.logo | image_url: width: 600 | image_tag:
+                  class: 'header__heading-logo motion-reduce',
+                  widths: widths,
+                  height: logo_height,
+                  width: settings.logo_width,
+                  alt: logo_alt,
+                  sizes: sizes,
+                  preload: true
+                }}
+              </div>
+            {%- else -%}
+              <span class="h2">{{ shop.name }}</span>
+            {%- endif -%}
+          </a>
+      </div>
+    </div>
+    <div class="owl-carousel">
+        {% for block in section.blocks %}
+            {% if block.settings.image != blank %}
+               <div class="item home-slider-bg" style="background-image: url('{{ block.settings.image | image_url }}');">
+            {% else %}
+              <div class="item home-slider-bg" style="background-image: url('{{ 'placehoder-image.png' | asset_url }}');">                     
+            {% endif %}    
+              <div class="page-width">
+                <div class="home-text {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                    {% if settings.animations_reveal_on_scroll %}
+                    data-cascade
+                    {% endif %}>
+                    <h4> {{ block.settings.heading }} </h4>
+                    <p>{{ block.settings.subheading }}</p>
+                    {% if block.settings.button_text != blank %}                        
+                        <a href="{{ block.settings.button_link | default: '#' }}" class="button buton-primary custom-site-btn"> {{ block.settings.button_text }} </a>
+                    {% endif %}
+                </div>
+              </div>
+            </div>        
+        {% endfor %}
+    </div>
+    {% if section.settings.show_controls %}        
+    <div class="play-pause-slider">
+        <a class="button secondary play">Play</a>
+        <a class="button secondary stop">Stop</a>
+    </div>
+    {% endif %}
+    {% if section.settings.show_scroll %}        
+    <div class="scroll-down {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            {% endif %}>
+        <a href="#collection-sec">
+            <span>SCROLL DOWN</span>
+        </a>
+    </div>
+    {% endif %}
+</section>
+
+{% schema %}
+    {
+        "name": "Banner Slider",
+        "settings":[
+                {
+                "type": "color_scheme",
+                "id": "color_scheme",
+                "label": "t:sections.all.colors.label",
+                "default": "accent-1"
+              },
+            {
+                "type": "checkbox",
+                "id": "show_controls",
+                "label": "Show Slider Controls",
+                "default": true
+            },
+            {
+                "type": "checkbox",
+                "id": "show_scroll",
+                "label": "Show Scroll Down",
+                "default": true
+            }
+        ],
+        "blocks": [
+            {
+                "type": "banner-slide",
+                "name": "Banner Slide",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "Heading",
+                        "default": "MERCY CODE"
+                    },
+                    {
+                        "type": "text",
+                        "id": "subheading",
+                        "label": "Subheading",
+                        "default": "FOR HIM"
+                    },
+                    {
+                        "type": "text",
+                        "id": "button_text",
+                        "label": "Button Text",
+                        "default": "SHOP NOW"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_link",
+                        "label": "Button Link"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Banner Slider"
+            }
+        ]
+    }
+{% endschema %}

@@ -1,0 +1,110 @@
+<link rel="stylesheet" href="{{ 'about-images-text.css' | asset_url }}">
+
+{%- style -%}
+.section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
+    }
+  }
+  {%- endstyle -%}
+
+<section class="section-{{ section.id }}-padding images-text-wrapper {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+    data-cascade
+    {% endif %}>
+    <div class="page-width">
+       <div class="images-text-items">
+            <div class="images-text-item image-wrap">
+                {% if section.settings.image_1 != blank %}
+                    <img src="{{ section.settings.image_1 | image_url  }}" alt="{{ section.settings.image_1.alt }}" width="270" height="382" loading="lazy">
+                {% else %}
+                    {{ 'image' | placeholder_svg_tag }}
+                {% endif %}
+            </div>
+            <div class="images-text-item text-wrap-about">
+                {{ section.settings.text }}
+            </div>
+            <div class="images-text-item image-wrap image-wrap2">
+                {% if section.settings.image_2 != blank %}
+                    <img src="{{ section.settings.image_2 | image_url  }}" alt="{{ section.settings.image_2.alt }}" width="270" height="388" loading="lazy">
+                {% else %}
+                    {{ 'image' | placeholder_svg_tag }}
+                {% endif %}
+            </div>
+       </div>
+    </div>
+</section>
+
+
+
+
+{% schema %}
+{
+    "name": "Images with Text",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image_1",
+            "label": "Image"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_2",
+            "label": "Image"
+        },
+        {
+            "type": "header",
+            "content": "t:sections.all.padding.section_padding_heading"
+        },
+        {
+            "type": "range",
+            "id": "padding_top",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_top",
+            "default": 80
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_bottom",
+            "default": 80
+        }     
+    ],
+    "presets": [
+        {
+            "name": "Images with Text"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,111 @@
+.about-items-list {
+    padding: 50px;
+}
+
+.about-faqs{
+    align-items: flex-start;
+}
+
+.accordion-faqs {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition:all 0.4s ease;
+    background-color: inherit;
+    padding: 0;
+  }
+
+  .accordion-faqs h2 {
+    margin: 0;
+    padding: 40px 0;
+    line-height: 5.1rem;
+  }
+  
+  .panel-faqs {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .accordion-faqs:not(:last-child) {
+    border-bottom: 1px solid rgba(32, 32, 32, .1);
+}
+
+.panel-faqs p {
+    font-size: 1.8rem;
+    line-height: 28.8px;
+    color: #707070;
+}
+
+.accordion-faqs.accordion-active:not(:last-child) {
+    border-bottom: unset;
+}
+
+.accordion-faqs.accordion-active + .panel-faqs {
+    border-bottom: 1px solid rgba(32,32,32,.1);
+}
+
+.panel-faqs p {
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.accordion-faqs.accordion-active h2 {
+    margin-bottom: 0;
+    padding-bottom: 24px;
+    position: relative;
+    padding-left: 65px;
+    transition: all .2s ease;
+}
+
+.accordion-active h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 57%;
+    width: 48px;
+    background-color: #202020;
+    height: 1px;
+    transition: all .2s ease;
+}
+
+@media screen and (max-width: 1199px) {
+    .accordion-faqs h2 {
+        padding: 20px 0;
+    }
+    .panel-faqs p {
+        font-size: revert;
+        line-height: 2.5rem;
+        padding-bottom: 30px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .about-items-list {
+        padding: 20px;
+    }
+    
+    .accordion-faqs h2 {
+        padding: 15px 0;
+    }
+    .accordion-active h2:before {
+        top: 47%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .about-faqs .grid__item {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .about-faqs {
+        flex-direction: column;
+    }
+    .about-items-list {
+        padding: 0;
+    }
+    .accordion-faqs h2 {
+        padding: 10px 0;
+    }
+}

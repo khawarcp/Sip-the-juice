@@ -1,0 +1,190 @@
+{
+  "sections": {
+    "3f4044d4-7880-4685-beed-63f4f6751e46": {
+      "type": "index-banner-slider",
+      "blocks": {
+        "8afbecd9-c98b-4b61-94ea-ac5e96dd99d1": {
+          "type": "banner-slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banner_Slide_Image.jpg",
+            "heading": "Coming Soon",
+            "subheading": "Subscribe now and you will receive 15% off your first order.",
+            "button_text": "Notify Me",
+            "button_link": ""
+          }
+        },
+        "d4f9bc2c-f987-47ad-b39e-6d87753ac7b9": {
+          "type": "banner-slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banner_Slide_Image.jpg",
+            "heading": "Coming Soon",
+            "subheading": "Subscribe now and you will receive 15% off your first order.",
+            "button_text": "Notify Me",
+            "button_link": ""
+          }
+        },
+        "e80ceb14-7aa9-4df9-8486-82547c32316d": {
+          "type": "banner-slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banner_Slide_Image.jpg",
+            "heading": "Coming Soon",
+            "subheading": "Subscribe now and you will receive 15% off your first order.",
+            "button_text": "Notify Me",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "8afbecd9-c98b-4b61-94ea-ac5e96dd99d1",
+        "d4f9bc2c-f987-47ad-b39e-6d87753ac7b9",
+        "e80ceb14-7aa9-4df9-8486-82547c32316d"
+      ],
+      "settings": {
+        "color_scheme": "scheme-c87f965a-877a-475e-bbdb-7c61837b55eb",
+        "show_controls": true,
+        "show_scroll": false
+      }
+    },
+    "5b48d29c-7096-447e-be3f-9f70cbf635ec": {
+      "type": "index-featured-collection",
+      "blocks": {
+        "8e1dd0ec-9b69-4c08-8522-de8fd8c84d71": {
+          "type": "collection",
+          "settings": {
+            "featured_collection": "hoodies",
+            "use_custom_image": false
+          }
+        },
+        "ddf8b001-764d-425e-8a35-e3bf4b2133d3": {
+          "type": "collection",
+          "settings": {
+            "featured_collection": "t-shirts",
+            "use_custom_image": false
+          }
+        },
+        "c651e14c-5653-4ce6-842a-0009e352e275": {
+          "type": "collection",
+          "settings": {
+            "featured_collection": "oversized-t-shirts",
+            "use_custom_image": false
+          }
+        },
+        "9a44bc33-4aa5-4528-b3bf-7fbd91814a5c": {
+          "type": "collection",
+          "settings": {
+            "featured_collection": "hoodies",
+            "use_custom_image": false
+          }
+        },
+        "0a514cfc-1879-4f67-8b57-cbd4a8409ae6": {
+          "type": "collection",
+          "settings": {
+            "featured_collection": "t-shirts",
+            "use_custom_image": false
+          }
+        },
+        "6641a96c-84b9-4316-a8da-1ea887627038": {
+          "type": "collection",
+          "settings": {
+            "featured_collection": "oversized-t-shirts",
+            "use_custom_image": false
+          }
+        }
+      },
+      "block_order": [
+        "8e1dd0ec-9b69-4c08-8522-de8fd8c84d71",
+        "ddf8b001-764d-425e-8a35-e3bf4b2133d3",
+        "c651e14c-5653-4ce6-842a-0009e352e275",
+        "9a44bc33-4aa5-4528-b3bf-7fbd91814a5c",
+        "0a514cfc-1879-4f67-8b57-cbd4a8409ae6",
+        "6641a96c-84b9-4316-a8da-1ea887627038"
+      ],
+      "settings": {
+        "richtext": "<p><a href=\"#\" title=\"#\">Notify Me<\/a><\/p><p>'Honoring the past while looking to the future'<\/p>"
+      }
+    },
+    "671e7226-f0c3-4b74-b6a5-aad3695c94bd": {
+      "type": "index-gallery",
+      "blocks": {
+        "a319cf08-31ae-4b16-b013-1b6294d7f030": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_1.jpg"
+          }
+        },
+        "101a2384-4d92-40f5-b5d4-d3b0f32cfd88": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_3.jpg"
+          }
+        },
+        "54c91b68-522b-4f8a-a11e-8284fd23d6ed": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_2.jpg"
+          }
+        },
+        "f15cf6b3-89ae-4c55-9323-012a7ac06221": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "a319cf08-31ae-4b16-b013-1b6294d7f030",
+        "101a2384-4d92-40f5-b5d4-d3b0f32cfd88",
+        "54c91b68-522b-4f8a-a11e-8284fd23d6ed",
+        "f15cf6b3-89ae-4c55-9323-012a7ac06221"
+      ],
+      "settings": {
+        "heading": "",
+        "richtext": "",
+        "button_text": "Shop the Sashiko",
+        "button_link": ""
+      }
+    },
+    "ed16c4fb-7e62-4e1c-ac60-fdfc252c78c3": {
+      "type": "index-ourstory",
+      "settings": {
+        "heading": "Hip-Hop Culture Fused With LA Street Style; Made & Designed In Los Angeles, CA",
+        "image": "shopify:\/\/shop_images\/Our_Story.jpg",
+        "richtext": "<h2>Our Story<\/h2><p>Over the decades since hip hop culture was formed we have seen growth and change.<\/p><p>However, whilst experiencing this growth and change we have seen four pillars of the culture remain constant; with DJing, MCing, B-boying and Graffiti always being core elements ofhip hop culture, from the beginning and for eternity.<\/p><p><a href=\"#\" title=\"#\">Read More<\/a><\/p>"
+      }
+    },
+    "e6f09046-4387-4a55-882c-9ff600bb1035": {
+      "type": "index-featured-images",
+      "settings": {
+        "heading": "",
+        "richtext": "",
+        "images_text": "At Sip The Juice we say, Honoring the past while looking to the future; where respect is a core value Sip The Juice is founded on.",
+        "image_1": "shopify:\/\/shop_images\/Featured_Image_1.jpg",
+        "image_2": "shopify:\/\/shop_images\/Featured_Image.jpg",
+        "arrow_link": "#"
+      }
+    },
+    "af6d7f25-c506-47b2-afa6-103b4b215d78": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify:\/\/shop_images\/Video_Poster.jpg",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "scheme-089b4670-a2bb-4c64-b9ee-4610f8231e94",
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "3f4044d4-7880-4685-beed-63f4f6751e46",
+    "5b48d29c-7096-447e-be3f-9f70cbf635ec",
+    "671e7226-f0c3-4b74-b6a5-aad3695c94bd",
+    "ed16c4fb-7e62-4e1c-ac60-fdfc252c78c3",
+    "e6f09046-4387-4a55-882c-9ff600bb1035",
+    "af6d7f25-c506-47b2-afa6-103b4b215d78"
+  ]
+}

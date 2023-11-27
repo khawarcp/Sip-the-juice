@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="{{ 'page-banner.css' | asset_url }}">
+
+{% if section.settings.bg_image != blank %}
+<section class="background page-banner {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+    data-cascade
+    {% endif %} style="background-image: url({{ section.settings.bg_image | image_url }});">
+    <div class="page-width">
+    <div class="logo-wrapper {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        {% if settings.animations_reveal_on_scroll %}
+        data-cascade
+        {% endif %}>
+        <a href="{{ routes.root_url }}" class="logo-link">
+            {%- if settings.logo != blank -%}
+              <div class="header__heading-logo-wrapper">
+                {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+                {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
+                {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
+                {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
+                {{ settings.logo | image_url: width: 600 | image_tag:
+                  class: 'header__heading-logo motion-reduce',
+                  widths: widths,
+                  height: logo_height,
+                  width: settings.logo_width,
+                  alt: logo_alt,
+                  sizes: sizes,
+                  preload: true
+                }}
+              </div>
+            {%- else -%}
+              <span class="h2">{{ shop.name }}</span>
+            {%- endif -%}
+          </a>
+      </div>
+    </div>
+</section>
+{% endif %}
+
+{% schema %}
+{
+    "name": "Page Banner",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "bg_image",
+            "label": "Backgruond Image"
+        }    
+    ],
+    "presets": [
+        {
+            "name": "Page Banner"
+        }
+    ]
+}
+{% endschema %}

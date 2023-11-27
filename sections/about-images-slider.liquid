@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="{{ 'about-images-slider.css' | asset_url }}">
+
+{%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
+    }
+  
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {%- endstyle -%}
+
+<section class="section-{{ section.id }}-padding images-slider-wrapper {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+    data-cascade
+    {% endif %}>
+    <div class="page-width">
+        <div class="images-slider owl-carousel">
+            {% for block in section.blocks %}
+                {% case block.type %}
+                    {% when 'item' %}
+                        {% if block.settings.image != blank %}
+                            <div class="item">
+                            <img src="{{ block.settings.image |  image_url }}" height="" width="" alt="{{ block.settings.image.alt }}" loading="eager">
+                            </div>
+                        {% endif %}
+                {% endcase %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+
+
+{% schema %}
+{
+    "name": "Images Slider",
+    "settings": [
+        {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+        },
+        {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+        },
+        {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+        }     
+    ],
+    "blocks": [
+    {
+        "type": "item",
+        "name": "Item",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+            }
+        ]
+    }
+],
+    "presets": [
+        {
+            "name": "Images Slider"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,167 @@
+.collection-sec {
+    padding: 90px 0px 0px;
+}
+
+.home-collection-sider h3 {
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 1.8rem;
+}
+
+
+
+.home-collection-sider .owl-item img {
+    height: 474px;
+    transform: scale(.85);
+    object-fit: cover;
+}
+
+.home-collection-sider .owl-item.active.center img {
+    transform: scale(1);
+}
+
+.home-collection-sider .owl-nav {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+}
+.home-collection-sider .owl-dots {
+    display: flex;
+    justify-content: center;
+}
+
+.home-collection-sider .owl-dots button span {
+    width: 7px;
+    height: 7px;
+    background-color: #D9D9D9;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.home-collection-sider .owl-dots button.active span {
+    background-color: #0E0E0E;
+}
+
+.home-collection-sider .owl-dots button:last-child span {
+    margin-right: 0px;
+}
+
+.discover-btn {
+    text-align: center;
+    max-width: 850px;
+    margin: 0px auto;
+    padding: 20px 0px 0px;
+}
+
+.discover-btn a {
+    min-width: 165px;
+    background-color: #0E0E0E;
+    padding: 14px 38px;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 50px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: 0.2s all;
+      font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+
+.owl-carousel .owl-item.active:not(.center) h3 {
+    margin-top: -20px;
+}
+.discover-btn {
+    max-width: 920px;
+}
+
+.discover-btn p {
+        font-size: 18px;
+    line-height: 28.8px;
+    color: #707070;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+.home-collection-sider .owl-nav .owl-prev ,.home-collection-sider .owl-nav .owl-next {
+    position: relative;
+}
+
+.home-collection-sider .owl-nav .owl-prev::before,.home-collection-sider .owl-nav .owl-next::before {
+    border: solid #0E0E0E;
+    border-width: 0 2.5px 2.5px 0;
+    display: inline-block;
+    padding: 3.5px;
+    content: '';
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    border-radius: 1px;
+    position: absolute;
+    right: 0px;
+  display:none;
+}
+
+.home-collection-sider .owl-nav .owl-prev::before {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+@media screen and (max-width:1199px) {
+    .home-collection-sider .owl-item img {
+        height: 374px;
+    }
+    .owl-carousel .owl-item.active:not(.center) h3 {
+        margin-top: -10px;
+    }
+    .collection-sec {
+        padding: 70px 0 0;
+    }
+    .discover-btn a {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:991px) {
+    .home-collection-sider .owl-item img {
+        height: 300px;
+    }
+    .owl-carousel .owl-item.active:not(.center) h3 {
+        margin-top: -10px;
+    }
+    .collection-sec {
+        padding: 50px 0 0;
+    }
+    .discover-btn a {
+        margin-bottom: 30px;
+    }
+    .discover-btn {
+        padding-top: 5px;
+    }
+}
+@media screen and (max-width:767px) {
+    .home-collection-sider .owl-item img {
+        height: 425px;
+        transform: scale(0.9);
+        object-fit: cover;
+    }
+    .owl-carousel .owl-item.active:not(.center) h3,
+    .owl-carousel .owl-item.active h3{
+        margin-bottom: 0;
+    }
+    .home-collection-sider .owl-dots {
+        margin-top: -30px;
+    }
+    .discover-btn a {
+        margin-bottom: 10px;
+    }
+    .discover-btn p {
+        font-size: 15px;
+        line-height: 20.8px;
+    }
+}

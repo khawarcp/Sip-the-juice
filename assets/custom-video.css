@@ -1,0 +1,23 @@
+.deferred-media__poster-button{
+  background-color: unset;
+      height: 12.6rem;
+    width: 12.6rem;
+}
+
+.deferred-media__poster-button .icon {
+    width: 12.6rem;
+    height: 12.6rem;
+}
+
+@media screen and (max-width: 991px) {
+  .deferred-media__poster-button .icon {
+    width: 8.6rem;
+    height: 8.6rem;
+}
+}
+@media screen and (max-width: 767px) {
+  .deferred-media__poster-button .icon {
+    width: 5.3rem;
+    height: 5.3rem;
+}
+}

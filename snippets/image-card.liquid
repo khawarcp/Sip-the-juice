@@ -1,0 +1,14 @@
+{% if image != blank %}
+  <img
+    src="{{ image | image_url: width: 2000 }}"
+    alt="{{ image.alt | escape }}"
+    height=""
+    class="motion-reduce"
+    {% unless lazy_load == false %}
+        loading="lazy"
+    {% endunless %}
+    width="{{ image.width }}"
+    height="">
+{% else %}
+  {{ 'image' | placeholder_svg_tag: "placeholder-svg placeholder" }}
+{% endif %}
