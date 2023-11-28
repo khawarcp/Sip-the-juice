@@ -89,6 +89,8 @@
 
 .home-text p {
     margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
 .home-banner-slider .owl-nav button {
@@ -211,6 +213,22 @@ a.button.secondary.play {
 }
 
 
+@media screen and (min-width: 1920px) {
+    .home-slider-bg {
+        min-height: 106vh;
+    }
+    .home-text {
+        padding-bottom: 70px;
+    }
+    
+    .home-banner-slider .owl-nav {
+        padding-bottom: 70px;
+    }
+    
+    .play-pause-slider {
+        margin-bottom: 70px;
+    }
+}
 @media screen and (max-width: 1439px) {
     .play-pause-slider {
         right: 185px;

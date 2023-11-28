@@ -41,9 +41,10 @@ $('.home-collection-sider.owl-carousel').owlCarousel({
   margin: 0,
   autoplayTimeout: 4000,
   nav: true,
-  mouseDrag  : true,
+  mouseDrag  : false,
   dots: true,
   center: true,
+  smartSpeed: 900,
   autoplayHoverPause:false,
   startPosition: 1,
   navText: ["<img src='https://cdn.shopify.com/s/files/1/0844/8462/0583/files/collection-left.svg?v=1700563013'>", "<img src='https://cdn.shopify.com/s/files/1/0844/8462/0583/files/collection-right.svg?v=1700563013'>"],
@@ -52,11 +53,13 @@ $('.home-collection-sider.owl-carousel').owlCarousel({
     0: {
       items: 1,
       center: false,
+      mouseDrag  : false,
     },
-    600: {
+    600:{
       items: 3,
+      mouseDrag  : false,
     },
-    1000: {
+    768: {
       items: 3,
     }
   }

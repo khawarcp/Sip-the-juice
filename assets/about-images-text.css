@@ -52,6 +52,12 @@
         margin-bottom: -120px;
     }
 }
+
+@media (min-width: 810px) and (max-width: 991px) {
+    .images-text-item.image-wrap {
+        margin-top: 0px;
+    }
+}
 @media screen and (max-width: 767px) {
     .images-text-items {
         flex-direction: column;

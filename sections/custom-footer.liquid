@@ -15,6 +15,14 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  @media screen and (max-width: 400px){
+    
+    .section-{{ section.id }}-padding {      
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+
+  }
 {%- endstyle -%}
 
 

@@ -36,14 +36,20 @@ position: absolute;
 }
 
 @media screen and (max-width:767px) {
-    .announcement-bar .item {
-        max-width: 300px;
-    }
     .announcement-bar .owl-nav {
         right: 20px;
         width: 20px;
     }
     .announcement-bar p{
         font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .announcement-bar .owl-nav {
+        right: 25px;
+    }
+    .announcement-bar .item {
+        max-width: calc(100% - 50px);
     }
 }

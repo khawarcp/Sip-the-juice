@@ -11,6 +11,11 @@
 body.gradient {
     background: #F4F3EE;
 }
+
+html{
+  scroll-behavior:smooth;
+}
+
 a{
   text-decoration:none;
 }
@@ -61,7 +66,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 .slalam-hover-imgs {
-    padding: 0px 0;
+    padding: 0;
 }
 
 .slalam-col-imgs {
@@ -185,6 +190,10 @@ img {
   font-weight: 500;
 }
 
+.salalam-relative-sec{
+    position:relative;
+    padding-top:30px;
+}
 
 .logo-wrapper {
     position: relative;
@@ -197,23 +206,37 @@ img {
     left: 0;
 }
 
+.slalam-col-imgs:hover{
+    flex:4
+}
+.slalam-col-imgs:hover~:nth-child(4){
+    flex:1
+}
+
+.slalam-col-imgs:nth-child(3) img{
+    object-position:85% 0px
+}
+.slalam-col-imgs:nth-child(3):hover img{
+    object-position:center
+}
+
+
 @media screen and (min-width:1400px){
-.slalam-col-imgs img {
-    height: 623px;
-}
-
-.slalam-col-imgs:nth-child(4) {
-    flex: 3.27;
-}
-
-.slalam-col-imgs {
-    flex: 0.9;
-}
+    .slalam-col-imgs img{
+        height:623px
+    }
+    .slalam-col-imgs:nth-child(4){
+        flex:3.27
+    }
+    .slalam-col-imgs{
+        flex:.9
+    }
 
 .title-para-row {
     margin-bottom: 70px;
 }
 }
+
 @media screen and (max-width:1199px){
     .home-slider-bg {
         min-height: 500px;
@@ -382,5 +405,9 @@ img {
     margin: auto;
     margin-bottom: 20px;
 }  
+
+.header__heading-logo-wrapper .header__heading-logo {
+    width: 110px;
+}
 
 }

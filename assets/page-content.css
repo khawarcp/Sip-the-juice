@@ -16,7 +16,7 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1439px) {
     .page-content-inner h2 {
         max-width: 805px;
         margin: 0 auto;

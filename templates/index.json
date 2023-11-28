@@ -10,7 +10,7 @@
             "heading": "Coming Soon",
             "subheading": "Subscribe now and you will receive 15% off your first order.",
             "button_text": "Notify Me",
-            "button_link": ""
+            "button_link": "\/#newsletter-section"
           }
         },
         "d4f9bc2c-f987-47ad-b39e-6d87753ac7b9": {
@@ -20,7 +20,7 @@
             "heading": "Coming Soon",
             "subheading": "Subscribe now and you will receive 15% off your first order.",
             "button_text": "Notify Me",
-            "button_link": ""
+            "button_link": "\/#newsletter-section"
           }
         },
         "e80ceb14-7aa9-4df9-8486-82547c32316d": {
@@ -30,7 +30,7 @@
             "heading": "Coming Soon",
             "subheading": "Subscribe now and you will receive 15% off your first order.",
             "button_text": "Notify Me",
-            "button_link": ""
+            "button_link": "\/#newsletter-section"
           }
         }
       },
@@ -100,7 +100,7 @@
         "6641a96c-84b9-4316-a8da-1ea887627038"
       ],
       "settings": {
-        "richtext": "<p><a href=\"#\" title=\"#\">Notify Me<\/a><\/p><p>'Honoring the past while looking to the future'<\/p>"
+        "richtext": "<p><a href=\"\/#newsletter-section\" title=\"\/#newsletter-section\">Notify Me<\/a><\/p><p>'Honoring the past while looking to the future'<\/p>"
       }
     },
     "671e7226-f0c3-4b74-b6a5-aad3695c94bd": {

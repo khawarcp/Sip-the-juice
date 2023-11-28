@@ -55,6 +55,7 @@ footer .footer-block-item.footer-newsletter {
     line-height: 1.6rem;
     font-weight: 500;
     left: calc(40% + 0rem);
+    top: calc(1.5rem + var(--inputs-border-width));
 }
 
 .footer-block-item .field__input:focus~.field__label {
@@ -100,3 +101,14 @@ footer .footer-block-item.footer-newsletter {
         margin-bottom: 1.5rem;
     }
 }
+
+@media screen and (max-width: 499.99px) {
+    .footer-block__subheading.inline-richtext {
+        max-width: 290px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+

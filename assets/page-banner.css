@@ -4,3 +4,15 @@
     background-repeat: no-repeat;
     height: 530px;
 }
+
+@media screen and (max-width: 767px) {
+    .header__heading-logo-wrapper .header__heading-logo {
+       width: 105px;
+   }
+}
+
+@media screen and (max-width: 450px) {
+    .header__heading-logo-wrapper .header__heading-logo {
+       width: 95px;
+   }
+}

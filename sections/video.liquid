@@ -29,6 +29,15 @@
   }
 
 {%- endstyle -%}
+{% unless section.settings.padding_bottom > 0 %}
+<style>
+    @media screen and (max-width: 400px) {
+  .video-section{
+    padding-bottom: {{ section.settings.padding_top | times: 0.25 | round: 0 }}px;
+  }
+}
+</style>
+{% endunless %}
 
 {%- liquid
   assign video_id = section.settings.video.id | default: section.settings.video_url.id
