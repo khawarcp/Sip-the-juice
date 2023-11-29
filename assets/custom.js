@@ -55,8 +55,9 @@ $('.home-collection-sider.owl-carousel').owlCarousel({
       center: false,
       mouseDrag  : false,
     },
-    600:{
+    550:{
       items: 3,
+      center: true,
       mouseDrag  : false,
     },
     768: {
