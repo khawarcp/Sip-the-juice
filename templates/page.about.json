@@ -68,7 +68,7 @@
         "logo_image": "shopify:\/\/shop_images\/richtext-logo.svg",
         "text": "<p>Sip The Juice plans to play a leading role in ensuring that while Hip Hop evolves, the foundations of Hip Hop culture are never forgotten or dismissed; while continuously looking at innovative ways to ensure Sip The Juice's designs stay true to Los Angeles street style.<\/p>",
         "padding_top": 40,
-        "padding_bottom": 80
+        "padding_bottom": 40
       }
     },
     "ddea060f-fe53-4543-b5ad-a8af6c5df10e": {
@@ -103,7 +103,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/About_Us.jpg",
-        "padding_top": 80,
+        "padding_top": 40,
         "padding_bottom": 80
       }
     }

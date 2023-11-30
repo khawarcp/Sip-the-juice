@@ -11,17 +11,17 @@
 }
 
 .owl-carousel .owl-item:not(.active):not(.center) h3 {
-    margin-top: -10px;
+    margin-top: -40px;
 }
 
 .home-collection-sider .owl-item img {
-    height: 474px;
-    transform: scale(.85);
-    object-fit: cover;
+    height: 494px;
+    transform: scale(.8);
+    object-fit: contain;
 }
 
 .home-collection-sider .owl-item.active.center img {
-    transform: scale(1);
+    transform: scale(1.05);
 }
 
 .home-collection-sider .owl-nav {
@@ -80,7 +80,7 @@
 }
 
 .owl-carousel .owl-item.active:not(.center) h3 {
-    margin-top: -20px;
+    margin-top: -40px;
 }
 .discover-btn {
     max-width: 920px;
@@ -117,12 +117,30 @@
     -webkit-transform: rotate(135deg);
 }
 
+.collection-sec .page-width{
+    padding: 0 1.2rem;
+}
+
+
+.home-collection-sider .owl-nav .owl-prev {
+    left: 20px;
+}
+.home-collection-sider .owl-nav .owl-next {
+    right: 20px;
+}
+
+@media screen and (max-width:1600px) {
+    .collection-sec .page-width{
+        padding: 0 1rem;
+    }
+}
+
 @media screen and (max-width:1199px) {
     .home-collection-sider .owl-item img {
-        height: 374px;
+        height: 414px;
     }
     .owl-carousel .owl-item.active:not(.center) h3 {
-        margin-top: -10px;
+        margin-top: -30px;
     }
     .collection-sec {
         padding: 70px 0 0;
@@ -130,13 +148,25 @@
     .discover-btn a {
         margin-bottom: 30px;
     }
+    .collection-sec .page-width {
+        padding: 0 .1rem;
+    }
+    .home-collection-sider .owl-nav .owl-prev {
+        left: 15px;
+    }
+    .home-collection-sider .owl-nav .owl-next {
+        right: 15px;
+    }
+    .owl-carousel .owl-item:not(.active):not(.center) h3 {
+        margin-top: -30px;
+    }
 }
 @media screen and (max-width:991px) {
     .home-collection-sider .owl-item img {
         height: 300px;
     }
     .owl-carousel .owl-item.active:not(.center) h3 {
-        margin-top: -10px;
+        margin-top: -20px;
     }
     .collection-sec {
         padding: 50px 0 0;
@@ -147,18 +177,44 @@
     .discover-btn {
         padding-top: 5px;
     }
+    .collection-sec .page-width {
+        padding: 0 2.5rem;
+    }
+
+    .home-collection-sider .owl-nav .owl-prev {
+        left: 5px;
+    }
+    .home-collection-sider .owl-nav .owl-next {
+        right: 5px;
+    }
+    .home-collection-sider .owl-nav {
+        top: 35%;
+    }
+    .owl-carousel .owl-item:not(.active):not(.center) h3 {
+        margin-top: -20px;
+    }
 }
 
 @media screen and (max-width:767px) {
+    .collection-sec .page-width {
+        padding: 0rem;
+    }
     .home-collection-sider .owl-nav .owl-prev {
-        left: -5px;
+        left: 5px;
     }
     .home-collection-sider .owl-nav .owl-next {
-        right: -5px;
+        right: 5px;
+    }
+    .home-collection-sider .owl-item img {
+        height: 230px;
+        object-position: top;
+    }
+    .home-collection-sider .owl-item.active.center img {
+        transform: scale(1);
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
     .home-collection-sider .owl-item img {
         height: 250px;
         transform: scale(.9);
@@ -177,9 +233,9 @@
 
 @media screen and (max-width:499.99px) {
     .home-collection-sider .owl-item img {
-        height: 450px;
-        transform: scale(0.9);
-        object-fit: cover;
+        height: 510px;
+        transform: scale(.9);
+        object-fit: contain;
     }
     .owl-carousel .owl-item.active:not(.center) h3,
     .owl-carousel .owl-item.active h3{
@@ -196,20 +252,31 @@
         line-height: 20.8px;
     }
     .home-collection-sider .owl-nav .owl-prev {
-        left: 0;
+        left: 7px;
     }
     .home-collection-sider .owl-nav .owl-next {
-        right: 0;
+        right: 7px;
     }
     .home-collection-sider .owl-nav {
         top: 45%;
     }
+    .owl-carousel .owl-item:not(.active):not(.center) h3{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .home-collection-sider .owl-item img {
+        height: 490px;
+        transform: scale(.9);
+        object-fit: contain;
+    }
 }
 
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 395px) {
     .home-collection-sider .owl-item img {
-        height: 400px;
+        height: 430px;
     }
     .home-collection-sider .owl-nav {
         top: 40%;
@@ -221,9 +288,16 @@
         margin-top: 0;
     }
     .home-collection-sider .owl-nav .owl-prev {
-        left: -2px;
+        left: 5px;
     }
     .home-collection-sider .owl-nav .owl-next {
-        right: -2px;
+        right: 5px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .home-collection-sider .owl-item img {
+        height: 360px;
     }
 }

@@ -53,10 +53,12 @@
         {% endfor %}
     </div>
     {% if section.settings.show_controls %}        
-    <div class="play-pause-slider">
-        <a class="button secondary play">Play</a>
-        <a class="button secondary stop">Stop</a>
-    </div>
+        <div class="play-wraper">
+            <div class="play-pause-slider">
+                <a class="button secondary play">Play</a>
+                <a class="button secondary stop">Stop</a>
+            </div>
+        </div>
     {% endif %}
     {% if section.settings.show_scroll %}        
     <div class="scroll-down {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"

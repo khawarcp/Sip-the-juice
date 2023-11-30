@@ -71,6 +71,11 @@ footer .footer-block-item.footer-newsletter {
     margin-bottom: 48px;
 }
 
+.newsletter-form__field-wrapper .field__input {
+    text-align: center;
+    font-family: var(--font-body-family) ;
+}
+
 @media screen and (max-width: 991px) {
     .footer-logo img {
         width: 138px;
