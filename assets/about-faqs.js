@@ -1,3 +1,17 @@
+
+var acc_item = document.getElementsByClassName("item-faq-wrapper");
+for (let s = 0; s < acc_item.length; s++) {
+  acc_item[s].addEventListener("mouseleave", function() {
+    this.querySelector('.accordion-faqs').classList.remove("accordion-active");
+    var panel = this.querySelector('.accordion-faqs').nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null
+    }
+  });
+}
+
+
+
 var acc = document.getElementsByClassName("accordion-faqs");
 
 function openAccordion() {
@@ -30,7 +44,6 @@ function toggleAccordion() {
 
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("mouseenter", openAccordion);
-  acc[i].addEventListener("mouseleave", closeAccordion);
 
   // Remove the click event listener if present to avoid double click issues
   acc[i].removeEventListener("click", toggleAccordion);
